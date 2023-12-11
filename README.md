@@ -1,6 +1,6 @@
 Caso queria ver o projeto acesse:
 
-Caso queira clonar o projeto: https://oqfazer-one.vercel.app
+Caso queira ter uma demonstração do projeto: https://oqfazer-one.vercel.app
 
 Passos:
 
