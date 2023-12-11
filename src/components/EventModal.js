@@ -1,5 +1,7 @@
 import React, { useContext, useState } from "react";
 import GlobalContext from "../context/GlobalContext";
+import dayjs from "dayjs";
+import "dayjs/locale/pt-br";
 
 const labelsClasses = [
   "indigo",
@@ -91,7 +93,11 @@ export default function EventModal() {
             <span className="material-icons-outlined text-purple-400">
               schedule
             </span>
-            <p>{daySelected.format("dddd, MMMM DD")}</p>
+            <p>
+              {dayjs(daySelected)
+                .locale("pt-br")
+                .format("dddd, DD MMMM ")}
+            </p>
             <span className="material-icons-outlined text-purple-400">
               segment
             </span>

@@ -1,4 +1,5 @@
-import dayjs, { locale } from "dayjs";
+import dayjs from "dayjs";
+import "dayjs/locale/pt-br";
 import React, { useContext, useEffect, useState } from "react";
 import GlobalContext from "../context/GlobalContext";
 import { getMonth } from "../util";
@@ -46,9 +47,8 @@ export default function SmallCalendar() {
     <div className="mt-9">
       <header className="flex justify-between">
         <p className="text-gray-500 font-semibold">
-          {dayjs(
-            new Date(dayjs().locale("pt-br").year(), currentMonthIdx)
-          )
+          {dayjs(new Date(dayjs().year(), currentMonthIdx))
+            .locale("pt-br")
             .format("MMMM YYYY")
             .toUpperCase()}
         </p>

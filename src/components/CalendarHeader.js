@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import React, { useContext } from "react";
+// import "dayjs/locale/pt-br"
 import logo from "../assets/logo.png";
 import GlobalContext from "../context/GlobalContext";
 export default function CalendarHeader() {
@@ -17,6 +18,7 @@ export default function CalendarHeader() {
         : dayjs().month()
     );
   }
+
   return (
     <header className="px-4 py-2 flex items-center bg-yellow-200">
       <h1 className="mr-10 text-xl text-purple-500 font-bold">
